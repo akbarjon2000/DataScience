@@ -1,3 +1,5 @@
+"use strict";
+
 // const findOdd = (arr) => {
 //     let newArr = [];
 //     // for (let i = 0; i < arr.length; i++) {
@@ -21,23 +23,20 @@
 //         if (obj[j] === 1) newArr.push(obj[j])
 //     }
 //     return
-
 // }
-
 // console.log(findOdd(['a', 'a', 'a', "d"]))
-
-
 function findOddOneOut(ar, ar_size) {
-    // Do XOR of all elements and return
-    let res = ar[0];
-    for (let i = 1; i < ar_size; i++)
-        res = res ^ ar[i];
+  // Do XOR of all elements and return
+  var res = ar[0];
 
-    return res;
-}
+  for (var i = 1; i < ar_size; i++) {
+    res = res ^ ar[i];
+  }
 
-// Driver code 
-let ar = ["a", "a", "b", "a"];
-let n = ar.length;
-console.log("Odd one is "
-    + findOddOneOut(ar, n));
+  return res;
+} // Driver code 
+
+
+var ar = ["a", "a", "b", "a"];
+var n = ar.length;
+console.log("Odd one is " + findOddOneOut(ar, n));

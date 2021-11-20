@@ -1,4 +1,4 @@
-body {
+.formDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,4 +24,16 @@ button {
   outline: unset;
   border-radius: 5px;
   color: white;
+}
+.title {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#list {
+  width: 1000px;
+  height: 400px;
+  background-color: aliceblue;
+  margin: 0 auto;
+  margin-top: 20px;
 }

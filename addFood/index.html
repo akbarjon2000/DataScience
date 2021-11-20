@@ -10,17 +10,21 @@
 </head>
 
 <body>
-    <h1>Add according to your fruits</h1>
-    <form action="" onsubmit="handleSubmit(event)" id="my-form">
-        <input type='text' placeholder="Food name" name="foodName">
-        <input type='text' placeholder="Price" name="price">
-        <input type='text' placeholder="Description" name="description">
-        <input type='text' placeholder="Category" name="category">
-        <input type='file' placeholder="Image" name="image">
-        <button>Save</button>
-    </form>
-    <div class="list">
-        <p>Hello</p>
+    <div class="formDiv">
+
+        <h1>Type your fruits</h1>
+        <form action="" onsubmit="handleSubmit(event)" id="my-form" name="my-form">
+            <input type='text' placeholder="FoodName" name="foodName">
+            <input type='text' placeholder="Price" name="price">
+            <input type='text' placeholder="Description" name="description">
+            <input type='text' placeholder="Category" name="category">
+            <input type='text' placeholder="Image" name="url">
+            <button>Save</button>
+        </form>
+    </div>
+    <h1 class="title">Our Menu</h1>
+    <div id="list">
+
     </div>
     <script src="./app.js"></script>
 </body>
