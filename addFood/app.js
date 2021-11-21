@@ -1,21 +1,16 @@
 const inputs = document.querySelectorAll("input")
+console.log(inputs)
 var list = document.getElementById("list")
 var par = document.createElement('p')
 var img = document.createElement('img');
 // var form = document.forms["my-form"]
 const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target[0].value)
+ 
     console.log(list)
     const { foodName, price, description, category, url } = document.forms["my-form"]
-    event.target.value ? alert("good") : alert("fiil in the form")
-    const newEl = `
-        <li>
-
-            <h1>${foodName.value}</h1>
-        </li>
-        
-    `;
+console.log()
+const newEl = "hello";
     list.innerHTML += newEl;
     event.target.reset()
 }
