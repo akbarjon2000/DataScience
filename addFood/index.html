@@ -14,17 +14,23 @@
 
         <h1>Type your fruits</h1>
         <form action="" onsubmit="handleSubmit(event)" id="my-form" name="my-form">
-            <input type='text' placeholder="FoodName" name="foodName">
-            <input type='text' placeholder="Price" name="price">
-            <input type='text' placeholder="Description" name="description">
-            <input type='text' placeholder="Category" name="category">
-            <input type='text' placeholder="Image" name="url">
+            <select class="select" id="category">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Shakes">Shakes</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+            <input type='text' placeholder="FoodName" id="foodName">
+            <input type='number' placeholder="Price" id="price">
+            <input type='text' placeholder="Description" id="description">
+            <input type='text' placeholder="Image URL" id="url">
             <button>Save</button>
+
         </form>
     </div>
     <h1 class="title">Our Menu</h1>
     <div id="list">
-
+        <!-- <div class="image"></div> -->
     </div>
     <script src="./app.js"></script>
 </body>
