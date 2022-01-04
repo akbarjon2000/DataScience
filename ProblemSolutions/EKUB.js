@@ -18,4 +18,4 @@ const EKUB = (a, b) => {
     let division = arr.sort((a, b) => a - b);
     return (division[arr.length - 1]);
 }
-console.log(EKUB(201, 9))
+console.log(EKUB(36, 9))
